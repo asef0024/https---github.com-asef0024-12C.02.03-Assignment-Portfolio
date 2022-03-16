@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Color Properties */
+:root {
+  --color-primary1: #f2ebdf;
+  --color-primary2: #024059;
+  --color-secondary1: #022626;
+  --color-accent1: #8c1b24;
+}
+
+html[data-theme="dark"] {
+  --color-primary1: #4f6367;
+  --color-primary2: #cbe0e4;
+  --color-secondary1: #e6d7d7;
+  --color-secondary2: #13070c;
+  --color-accent1: #c97594;
+  --color-accent2: #f9dc5c;
+}
+
+/* Fonts */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: var(--color-primary1);
+}
+
+h1,
+h2,
+h3 {
+  color: red;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 1.953rem;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-family: "Inconsolata", sans-serif;
+}
+
+p {
+  color: var(--color-secondary2);
+  font-family: "Inconsolata", monospace4;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-accent1);
+  font-family: "Inconsolata", monospace4;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* UI Elements */
+button {
+  display: inline-block;
+  height: 3rem;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-accent2);
+  color: var(--color-secondary2);
+  border-radius: 2rem;
+}
+
+.dark_button {
+  background-color: var(--color-accent2);
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 250px;
+  height: 3rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  text-align: left;
+  background-color: #eee;
+  border-color: #ddd;
+  color: #222;
+  margin: 2rem 2rem 0 0;
+}
+
+/* Menu */
+nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-secondary1);
+}
+
+nav a {
+  color: var(--color-secondary2);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.logo {
+  font-family: "Noto Serif Display", serif;
+  font-size: 1.25rem;
+  color: var(--color-accent1);
+}
+
+nav li {
+  display: inline-block;
+  margin: 0px 1rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  min-height: 80vh;
+  padding: 5rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-primary1);
+}
+
+header h1 {
+  color: var(--color-secondary1);
+  font-size: 4rem;
+}
+
+header p {
+  color: var(--color-secondary2);
+}
+
+header button {
+  margin-bottom: 5rem;
+}
+
+.header_text {
+  width: 30vw;
+  min-width: 300px;
+}
+
+.vl {
+  border-top: 0.1vw solid #024059;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+}
